@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --gray: hsl(0, 0%, 86%);
+    --smokey-gray: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gray);
+}
+.main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.main .box-context{
+    background-color: var(--white);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 150px;
+    padding: 30px 30px 20px 40px;
+    margin: 0px 20px;
+}
+.main .box-context .form .form-box{
+    display: flex;
+    gap: 40px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid var(--gray);
+    padding-right: 180px;
+}
+.main .box-context .form .form-box > div{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+.main .box-context .form .form-2{
+    display: flex;
+    justify-content: flex-end;
+    position: relative; 
+    top: -40px;
+}
+.main .box-context .form .btnEnviar{
+    background-color: var(--purple);
+    border: 1px solid transparent;
+    border-radius: 70%;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.main .box-context .form .btnEnviar:hover{
+    background-color: var(--off-black);
+}
+.input-red{
+    border: 1px solid var(--light-red);
+}
+.form-p{
+    color: var(--light-red);
+    padding-top: 6px;
+    font-size: 12px;
+}
+.main .box-context .form .form-box .input{
+    padding: 15px;
+    border-radius: 7px;
+    border: 1px solid var(--gray);
+    font-size: 20px;
+    font-weight: 600;
+    caret-color: var(--purple);
+}
+.main .box-context .form .form-box .input:focus{
+    outline: 0.5px solid var(--purple);
+}
+.main .box-context .form .form-box .label{
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--smokey-gray);
+}
+.section{
+    margin-top: -30px;
+    line-height: 4em;
+}
+.section .section-span{
+    color:var(--purple);
+    font-size: 60px;
+    font-weight: 800;
+}
+.section .s-span-title{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 760px){
+    .main .box-context .form .form-box > div{
+        width: 90px;
+    }
+    .main .box-context .form .form-2{
+        justify-content: center;
+        top: -25px;
+    }
+    .main .box-context .form .form-box{
+        padding-right: 0px;
+        gap: 20px;
+    }
+    .main .box-context .form .btnEnviar{
+        width: 50px;
+        height: 50px;
+        padding: 11px;
+    }
+    .section{
+        line-height: 3em;
+    }
+    /* section */
+    .section{
+        margin-top: -15px;
+    }
+    .section .section-span{
+        font-size: 45px;
+    }
+    .section .s-span-title{
+        font-size: 45px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .main .box-context{
+        padding: 35px 15px 15px 15px;
+    }
+    .main .box-context{
+       margin: 0px 20px;
+    }
+    .main .box-context .form .form-box{
+        gap: 14px;
+    }
+}
+@media screen and (max-width: 350px)  {
+    .main .box-context{
+        padding: 35px 15px 15px 25px;
+    }
+    .main .box-context .form .form-box{
+        flex-wrap: wrap;
+    }
+    .section .section-span{
+        font-size: 35px;
+    }
+    .section .s-span-title{
+        font-size: 35px;
+        font-weight: 800;
+    }
+}
