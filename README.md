@@ -1,4 +1,4 @@
 # Frontend Mentor - Age calculator app
-(./design/fondo.png)
+![](https://github.com/RohyllerP/age-calculator/blob/main/design/fondo.png)
 
 
